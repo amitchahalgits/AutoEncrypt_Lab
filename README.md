@@ -13,7 +13,11 @@ The article explains how Auto-encrypt works, Whats are pros and cons. Read up.
  
 
 ### Lab Setup : 
-Its a local lab on macos, built on loopback. Refer config as below: 
+Its a local lab on macos, built on loopback. Refer config as below or can be downloaded
+from github as below :
+
+`git clone https://github.com/amitchahalgits/AutoEncrypt_Lab.git`
+`cd AutoEncrypt_Lab`
 
 ### Configs : 
 
