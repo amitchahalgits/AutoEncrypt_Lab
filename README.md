@@ -167,9 +167,10 @@ When server and clients are configured with ACLs and Auto-encrypt, and client bo
 
 Also, the token used by client needs to have node:write permission, as it needs to register its status in consul, else the Cluster join will fail, and we’ll keep getting the above Autoencrypt errors. Refer error : 
 
-
+```
 2023-08-10T22:56:01.465+1000 [ERROR] agent.auto_config: AutoEncrypt.Sign RPC failed: addr=127.0.0.1:8300 error="rpcinsecure error making call: Permission denied: token with AccessorID 'ebbce4e7-316e-8a0d-9e9d-463b1b5bef8a' lacks permission 'node:write' on "client""
 2023-08-10T22:56:01.465+1000 [ERROR] agent.auto_config: No servers successfully responded to the auto-encrypt request
+```
 If the token has node:write permissions, and agent token is configured correctly on client, it will manage to get signed certs from servers.
 
 *Question*: But how the client gets a CSR signed by a server which is TLS enabled and verify_incoming = true . How is client getting authenticated in this TLS communication ?
