@@ -116,6 +116,10 @@ consul tls cert create -server -dc dc1
 ==> Saved dc1-server-consul-0-key.pem
 ``` 
 
+#### Process Flow
+
+![Alt text](/Users/amitchahal/Workdir/MyWorkHook/Docker_Repros/AutoEncrypt_Lab)
+
 #### Run the server and client agents : 
 ```
 ./consul agent -config-file consulserver.hcl
