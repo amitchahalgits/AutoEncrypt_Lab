@@ -118,7 +118,8 @@ consul tls cert create -server -dc dc1
 
 #### Process Flow
 
-![Alt text](/Users/amitchahal/Workdir/MyWorkHook/Docker_Repros/AutoEncrypt_Lab)
+![Autoencrypt](https://github.com/amitchahalgits/AutoEncrypt_Lab/assets/109494649/cf425ac3-60e3-4e2f-b86d-608f246876b0)
+
 
 #### Run the server and client agents : 
 ```
